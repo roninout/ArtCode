@@ -22,6 +22,6 @@ public class task_4_8 {
         System.out.println("Введите 2-е число:");
         int numb2 = sc.nextInt();
 
-        System.out.println(numb1 % numb2 == 0 ? "true = " + numb1 / numb2 + " " + numb1 % numb2 : "false = "  + numb1 / numb2 + " " + numb1 % numb2);
+        System.out.println(String.format("%d %d - %b", numb1, numb2, numb1 % 10 == numb2 % 10));
     }
 }
