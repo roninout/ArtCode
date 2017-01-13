@@ -5,9 +5,12 @@ import java.util.Scanner;
 /**
  * Created by Kovalchuk_A on 27.10.2016.
  */
+
+ //4.1. Пользователь вводит параметр с консоли (текущий час от 0 до 24)
+ //Если время от 9 до 18, то выводим "Я на работе", в другом случае "Я отдыхаю")
+
 public class task_4_1 {
     public static void main(String[] args) {
-        // create Scanner using "new" word
         Scanner sc = new Scanner(System.in);
 
 
