@@ -13,9 +13,14 @@ public class task_4_7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите 1-е число:");
-        int numb1 = sc.nextInt();
+        float numb1 = sc.nextFloat();
         System.out.println("Введите 2-е число:");
-        int numb2 = sc.nextInt();
+        float numb2 = sc.nextFloat();
+
+        if (numb1 % numb2 == 0)
+            System.out.println("true = " + numb1/numb2);
+        else
+            System.out.println("false = " + numb1/numb2);
 
 
     }
