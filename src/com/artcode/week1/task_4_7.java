@@ -17,11 +17,6 @@ public class task_4_7 {
         System.out.println("Введите 2-е число:");
         float numb2 = sc.nextFloat();
 
-        if (numb1 % numb2 == 0)
-            System.out.println("true = " + numb1/numb2);
-        else
-            System.out.println("false = " + numb1/numb2);
-
-
+        System.out.println(numb1 % numb2 == 0 ? "true = " + numb1 / numb2 : "false = " + numb1 / numb2);
     }
 }
