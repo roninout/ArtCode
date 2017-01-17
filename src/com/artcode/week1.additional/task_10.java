@@ -1,5 +1,7 @@
 package com.artcode.week1.additional;
 
+import java.util.Scanner;
+
 /**
  * Created by Kovalchuk_A on 16.01.2017.
  */
@@ -11,4 +13,23 @@ package com.artcode.week1.additional;
  */
 
 public class task_10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите продолжительность разговора:");
+        int iTime = sc.nextInt();
+        System.out.println("и день недели:");
+        int iDay = sc.nextInt();
+
+        double dPrice = iTime * 0.54;
+
+        switch (iDay) {
+            case 6:
+                dPrice = dPrice - iTime / 20.0;
+                break;
+            case 7:
+                dPrice = dPrice - iTime / 20.0;
+                break;
+        }
+         System.out.println("К оплате - " + dPrice);
+    }
 }
