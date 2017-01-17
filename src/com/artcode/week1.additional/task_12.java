@@ -1,5 +1,7 @@
 package com.artcode.week1.additional;
 
+import java.util.Scanner;
+
 /**
  * Created by Kovalchuk_A on 16.01.2017.
  */
@@ -11,4 +13,15 @@ package com.artcode.week1.additional;
  */
 
 public class task_12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите продолжительность разговора:");
+        int speed = sc.nextInt();
+
+        if (speed < 1) System.out.println("Безветренная погода");
+        if (speed >= 1  && speed <= 4) System.out.println("Слабый");
+        if (speed >= 5  && speed <= 10) System.out.println("Умеренный"); // 9 - вызовет глюк программы
+        if (speed >= 9  && speed <= 18) System.out.println("Сильный");
+        if (speed > 19) System.out.println("Ураганный");
+    }
 }
