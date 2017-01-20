@@ -16,36 +16,43 @@ package com.igor.shape;
  */
 
 public class Desk {
-    private Shape[][] desk = new Shape[][]{}; // доска с формами
-
-    public Desk() {
-        initializeDesk();
-    }
-
-
-    // очищаем поле от фигур
-    private void initializeDesk() {
-        for (int i = 0; i < desk.length; i++)
-            for (int j = 0; j < desk.length; j++)
-                removeShape(i, j);
-    }
+    // доска с формами
+    private Shape[][] desk = new Shape[][]{
+            {null, null},
+            {null, null}
+    };
 
     // устанавливаем фигуру на доску
     void setShape(int x, int y, Shape form) {
-        if (desk[x][y] != null)
+        if (desk[x][y] == null) {
             desk[x][y] = form;
+            System.out.println("Фигура " + form.getClass().getSimpleName() + " была успешно установлена");
+        }
         else
-            System.out.println("Нет возможности установить фигуру, так как это место занято " + desk[x][y].toString());
+            System.out.println("Нет возможности установить фигуру, так как это место занято " + desk[x][y].getClass().getSimpleName());
     }
 
     // удаляем фигуру с доски
-    private void removeShape(int x, int y) {
+    void removeShape(int x, int y) {
         desk[x][y] = null;
         System.out.println("Фигура была успешно удалена");
     }
 
     // отображаем информацию о фигурах на доске, а также их суммарную площадь
-    public void showShape() {
+    void showDesk() {
+        double Sum = 0.0;
+        for (int i = 0; i < desk.length; i++) {
+            for (int j = 0; j < desk.length; j++) {
+                if (desk[i][j] == null)
+                    System.out.print("Empty  ");
+                else {
+                    System.out.print(desk[i][j].getClass().getSimpleName() + "  ");
+                    Sum += desk[i][j].getArea();
+                }
+            }
+            System.out.println();
+        }
+        System.out.println("Суммарная площадь - " + Math.round(Sum));
         System.out.println();
     }
 }

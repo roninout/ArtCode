@@ -17,6 +17,7 @@ package com.igor.shape;
 
 public class Circle extends Shape {
     private Point point;
+    public static String name = "Circle";
     private double radius; // радиус круга
 
     // конструктор

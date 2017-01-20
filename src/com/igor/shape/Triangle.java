@@ -17,6 +17,12 @@ package com.igor.shape;
 
 public class Triangle extends Shape {
     private Point point;
+
+    public static String getName() {
+        return name = "Triangle";
+    }
+
+    private static String name;// = "Triangle";
     private double a; // основание треугольника
 
     private double b; // сторона треугольника
@@ -73,6 +79,6 @@ public class Triangle extends Shape {
     @Override
         // возвращает площадь треугольника
     double getArea() {
-        return 1/2 * (a * h);
+        return 1.0/2.0 * (a * h);
     }
 }
