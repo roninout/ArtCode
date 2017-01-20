@@ -21,7 +21,7 @@ public class Circle extends Shape {
     private double radius; // радиус круга
 
     // конструктор
-    public Circle(double radius) {
+    Circle(double radius) {
         this.radius = radius;
         point = new Point(0,0);
     }

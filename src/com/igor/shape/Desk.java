@@ -15,7 +15,7 @@ package com.igor.shape;
     5. * Нарисуйте UML диаграмму проекта
  */
 
-public class Desk {
+class Desk {
     // доска с формами
     private Shape[][] desk = new Shape[][]{
             {null, null},

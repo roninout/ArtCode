@@ -18,19 +18,13 @@ package com.igor.shape;
 public class Triangle extends Shape {
     private Point point;
 
-    public static String getName() {
-        return name = "Triangle";
-    }
-
-    private static String name;// = "Triangle";
     private double a; // основание треугольника
-
     private double b; // сторона треугольника
     private double c; // сторона треугольника
     private double h; // высота треугольника
 
     // конструктор
-    public Triangle(double a, double b, double c, double h) {
+    Triangle(double a, double b, double c, double h) {
         this.a = a;
         this.b = b;
         this.c = c;

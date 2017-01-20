@@ -15,7 +15,7 @@ package com.igor.shape;
     5. * Нарисуйте UML диаграмму проекта
  */
 
-public abstract class Shape {
+abstract class Shape {
     abstract double  getPerimetr(); // периметр фигуры
     abstract double  getArea(); // площадь фигуры
 

@@ -20,7 +20,7 @@ public class Square extends Shape {
     private double a; // сторона квадрата
 
     // конструктор
-    public Square(double a) {
+    Square(double a) {
         this.a = a;
         point = new Point(0,0);
     }
